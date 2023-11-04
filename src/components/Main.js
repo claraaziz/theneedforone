@@ -3,6 +3,7 @@ import Second from './Second';
 
 const Main = () => {
 
+    
     const [name, setName] = useState("");
     const [click, setClick] = useState(0);
     const [btn, setBtn] = useState(false);
@@ -23,7 +24,7 @@ const Main = () => {
     console.log(name);
 
     switch(click){
-        case 0:
+        default:
             return <div className="grid justify-items-center duration-500 ease-in-out transform transition-opacity">
                 <p className="text-3xl text-slate-300 mb-8 font-bold lg:text-5xl drop-shadow-lg" dir="rtl">ممكن تكتبي اسمك هنا :)</p>
                 <form className='grid justify-items-center'>
