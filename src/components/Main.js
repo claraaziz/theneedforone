@@ -43,19 +43,19 @@ const Main = () => {
     switch(click){
         default:
             return <div className="grid justify-items-center duration-500 ease-in-out transform transition-opacity">
-                <p className="text-3xl text-slate-300 text-center mb-8 ml-14 mr-14 font-bold lg:text-5xl drop-shadow-lg">Please write your name here :)</p>
+                <p className="text-3xl text-white text-center mb-8 ml-14 mr-14 font-bold lg:text-5xl drop-shadow-lg">Please write your name here :)</p>
                 <form className='grid justify-items-center'>
                     <input type="text" className="outline-1 outline-slate-800 shadow-lg rounded-md sm:w-96 sm:h-10 appearance-none py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" onChange={(e) => handleChange(e.target.value)}/>
                     <input type="button" className='bg-emerald-300 shadow-xl text-lg lg:text-2xl pr-7 pl-7 pb-2 pt-2 mt-5 rounded-lg font-bold cursor-pointer' onClick={()=>setClick(1)} value="Go!" disabled={name===""}/>
                 </form>
             </div>
         case 1:
-            return <div className='h-full w-full flex items-center justify-center transition-all duration-500 ease-in-out transform bg-black bg-opacity-60' style={{
+            return <div className='h-full w-full flex items-center justify-center transition-all duration-500 ease-in-out transform bg-black bg-opacity-50' style={{
                 backgroundImage: `url(${links[num]})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no',
-                backgroundBlendMode: 'color-burn',
+                backgroundBlendMode: 'soft-light',
               }}>
                 <div><Second name={name} setClick={clicked} setName={handleName} setNum={handleBg}/></div>
             </div>
