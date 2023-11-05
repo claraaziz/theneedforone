@@ -50,7 +50,7 @@ const Main = () => {
                 </form>
             </div>
         case 1:
-            return <div className='h-full w-full flex items-center justify-center transition-all duration-500 ease-in-out transform bg-black bg-opacity-50' style={{
+            return <div className='h-full w-full flex items-center justify-center transition-all duration-500 ease-in-out transform bg-black bg-opacity-60' style={{
                 backgroundImage: `url(${links[num]})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
